@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Gradient Club - The premier Programming, Competitive Coding, and Algorithmic Vanguard of IIIT Sri City. Explore planned events, DSA arena, and community hackathons.">
+  <meta name="keywords"
+    content="Gradient, IIIT Sri City, IIITS, Competitive Programming, DSA, Algorithms, CodeX, Hackathons, ICPC">
+  <meta name="author" content="Gradient Club, IIIT Sri City">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="Gradient Club | IIIT Sri City">
+  <meta property="og:description"
+    content="Iterate, Optimize, Ascend. The official Competitive Programming & Algorithms Club of IIIT Sri City.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+
+  <title>Gradient Club | IIIT Sri City — Iterate. Optimize. Ascend.</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Interactive Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="brand-wrapper">
+        <img src="assets/logo.png" alt="Gradient Logo" class="brand-logo-img">
+        <div class="brand-meta">
+          <span class="brand-name">gra<span class="greek-delta">&delta;</span><span
+              style="color: var(--accent-cyan);">i</span>ent</span>
+          <span class="brand-tagline"><span>IIIT SRI CITY</span> &bull; ALGO VANGUARD</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#motto-section" class="nav-link">Our Motto</a></li>
+        <li><a href="#planned-events" class="nav-link">Planned Events</a></li>
+        <li><a href="#code-arena" class="nav-link">Code Arena</a></li>
+        <li><a href="#initiatives" class="nav-link">Initiatives</a></li>
+        <li><a href="#connect" class="nav-link">Connect</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#planned-events" class="btn btn-primary btn-sm">
+          <span>Explore Events</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-layout">
+        <div class="hero-content">
+
+
+          <!-- Main Title -->
+          <h1 class="hero-title">
+            <span class="typed-prefix">&lt;gradient_iiits /&gt;</span>
+            DECODE. OPTIMIZE. <br>
+            <span class="gradient-text">DOMINATE.</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-subtitle">
+            Welcome to <strong>Gradient</strong>, the foundational technical and competitive programming club of
+            <strong>Indian Institute of Information Technology, Sri City</strong>. We cultivate deep problem-solving
+            intuition, engineer high-efficiency algorithms, and empower students to conquer national and international
+            coding frontiers.
+          </p>
+
+          <!-- MOTTO EXPERIENCE BOX (Motto written first, sleek button at the end) -->
+          <div class="motto-card" id="motto-section">
+            <div class="motto-header">
+              <div class="motto-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+                <span>Club Ethos &amp; Motto</span>
+              </div>
+              <span class="mono-text" style="font-size: 0.76rem; color: var(--text-muted);">&lt;motto.cpp&gt;</span>
+            </div>
+
+            <!-- Written Motto -->
+            <div class="motto-text-content">
+              <blockquote class="motto-quote">
+                &ldquo;Iterate. Optimize. Ascend. &mdash; From <span
+                  class="highlight-complexity">&Omicron;(N&sup2;)</span> to <span
+                  class="highlight-delta">&Omicron;(1)</span>, we descend into raw logic and rise in computational
+                excellence.&rdquo;
+              </blockquote>
+              <p class="motto-subquote">
+                Every line of code is a step toward convergence. We believe true mastery is not merely finding an
+                answer, but discovering the most elegant and time-optimal trajectory.
+              </p>
+            </div>
+
+            <!-- Motto Footer Row -->
+            <div class="motto-footer-row">
+              <div class="motto-author">
+                &mdash; <strong>Gradient Club</strong>, IIIT Sri City
+              </div>
+              <div class="motto-badge">
+                <span class="mono-text"
+                  style="font-size: 0.76rem; color: var(--accent-emerald); font-weight: 600;">#IterateOptimizeAscend</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#planned-events" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>View Planned Events</span>
+            </a>
+            <a href="#code-arena" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Launch Code Arena</span>
+            </a>
+            <a href="https://www.linkedin.com/company/gradient-iiits/posts/?feedView=all" target="_blank"
+              rel="noopener noreferrer" class="btn btn-outline-emerald">
+              <span>LinkedIn Feed ↗</span>
+            </a>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="hero-stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">50<span class="suffix">+</span></div>
+              <div class="stat-desc">Contests &amp; Speedruns</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">500<span class="suffix">+</span></div>
+              <div class="stat-desc">Active Student Coders</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">Top 100</div>
+              <div class="stat-desc">ICPC Regional Ranks</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100<span class="suffix">%</span></div>
+              <div class="stat-desc">Peer-Driven Learning</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planned Events Section (Main Requested Feature) -->
+  <section id="planned-events">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Upcoming Calendar</span>
+        </div>
+        <h2 class="section-title">Planned <span class="gradient-text">Events &amp; Hackathons</span></h2>
+        <p class="section-desc">
+          Stay ahead with our curated lineup of algorithmic contests, bootcamps, and hackathons. Register via Google
+          Forms or set instant notifications for upcoming dates.
+        </p>
+      </div>
+
+      <!-- Controls: Filter Tabs & Search Bar -->
+      <div class="events-controls-wrapper">
+        <div class="events-filter-tabs">
+          <button class="filter-tab-btn active" data-filter="all">All Events</button>
+          <button class="filter-tab-btn" data-filter="open">🟢 Registration Open</button>
+          <button class="filter-tab-btn" data-filter="tentative">🟡 Coming Soon / Tentative</button>
+          <button class="filter-tab-btn" data-filter="contest">🏆 Contests</button>
+          <button class="filter-tab-btn" data-filter="bootcamp">🧠 Workshops &amp; Sessions</button>
+        </div>
+
+        <div class="events-search-bar">
+          <svg class="search-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="events-search-input" class="events-search-input"
+            placeholder="Search events by name, topic, or keyword...">
+        </div>
+      </div>
+
+      <!-- Events Grid Container (populated dynamically) -->
+      <div class="events-grid" id="planned-events-grid">
+        <!-- Javascript renders event cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Arena (5 Curated Problems: 2 UG1, 2 UG2, 1 UG3-4) -->
+  <section id="code-arena">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Interactive Practice</span>
+        </div>
+        <h2 class="section-title">Gradient <span class="gradient-text">Code Arena</span></h2>
+        <p class="section-desc">
+          Test your algorithmic instincts across 5 tailored challenges: 2 for UG-1 (Freshers), 2 for UG-2 (Sophomores),
+          and 1 advanced problem for UG-3/4 ICPC aspirants.
+        </p>
+      </div>
+
+      <div class="code-arena-container">
+        <!-- Level Tabs -->
+        <div class="arena-level-selector" id="arena-level-tabs">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Split IDE Workspace -->
+        <div class="arena-workspace">
+          <!-- Left: Problem Statement -->
+          <div class="arena-problem-panel">
+            <div class="problem-header">
+              <div class="problem-tag-row" id="problem-tag-row"></div>
+              <h3 class="problem-title" id="problem-title">Loading Challenge...</h3>
+              <div class="problem-desc" id="problem-description"></div>
+
+              <div class="problem-io-box">
+                <div class="io-label">Sample Input:</div>
+                <div id="problem-sample-in"></div>
+              </div>
+
+              <div class="problem-io-box">
+                <div class="io-label">Sample Output:</div>
+                <div id="problem-sample-out"></div>
+              </div>
+
+              <div class="problem-constraints" id="problem-constraints"></div>
+            </div>
+
+            <div style="margin-top: 14px; font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-mono);">
+              💡 <em>Tip: Write optimal logic to beat standard runtime complexity limits.</em>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Code Editor & Test Runner -->
+          <div class="arena-editor-panel">
+            <div class="editor-toolbar">
+              <div class="lang-select-wrapper">
+                <span
+                  style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-secondary);">Language:</span>
+                <select id="arena-lang-select" class="lang-select">
+                  <option value="cpp">C++ (GCC 13)</option>
+                  <option value="python">Python 3.11</option>
+                  <option value="java">Java 21</option>
+                  <option value="javascript">JavaScript (Node.js)</option>
+                </select>
+              </div>
+
+              <div style="display: flex; gap: 8px;">
+                <button class="btn btn-secondary btn-sm" id="btn-copy-code" title="Copy code">Copy</button>
+                <button class="btn btn-secondary btn-sm" id="btn-reset-code" title="Reset to boilerplate">Reset</button>
+              </div>
+            </div>
+
+            <!-- Code textarea -->
+            <textarea id="arena-code-editor" class="code-editor-area" spellcheck="false"></textarea>
+
+            <!-- Console Output Bar -->
+            <div class="editor-console-output">
+              <div class="console-header">
+                <span>Execution Verdict &amp; Output</span>
+                <span>Gradient Virtual Sandbox</span>
+              </div>
+              <div id="arena-console-output" class="console-body">
+                Click &ldquo;Run Code&rdquo; to compile and verify test cases.
+              </div>
+            </div>
+
+            <!-- Run action bar -->
+            <div class="editor-footer-actions">
+              <button class="btn btn-primary btn-sm" id="btn-run-code">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>Run Code</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Club Initiatives & Visualizer -->
+  <section id="initiatives">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Ecosystem &amp; Pillars</span>
+        </div>
+        <h2 class="section-title">How We <span class="gradient-text">Empower Coders</span></h2>
+        <p class="section-desc">
+          From first-year foundational syntax to high-stakes ICPC contests and OA interview rounds.
+        </p>
+      </div>
+
+      <div class="initiatives-grid">
+        <div class="initiative-card">
+          <div class="initiative-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="initiative-title">CodeX Contest Series</h3>
+          <p class="initiative-desc">
+            Bi-weekly and monthly timed speedruns featuring custom, un-Googlable algorithmic problems crafted by IIITS
+            seniors.
+          </p>
+        </div>
+
+        <div class="initiative-card">
+          <div class="initiative-icon emerald">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <h3 class="initiative-title">DSA Deep-Dive Cohorts</h3>
+          <p class="initiative-desc">
+            Hands-on deep dives into Segment Trees, Fenwick Trees, Convex Hull, Flow Networks, and DP on Graphs.
+          </p>
+        </div>
+
+        <div class="initiative-card">
+          <div class="initiative-icon purple">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="10 8 16 12 10 16 10 8"></polygon>
+            </svg>
+          </div>
+          <h3 class="initiative-title">ICPC &amp; OA Prep Track</h3>
+          <p class="initiative-desc">
+            Specialized mentorship for teams aiming for ICPC Asia Amritapuri, Kanpur &amp; Gwalior regional
+            qualifications.
+          </p>
+        </div>
+
+        <div class="initiative-card">
+          <div class="initiative-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="initiative-title">Peer Code Reviews</h3>
+          <p class="initiative-desc">
+            Learn from fellow batchmates: dissect time-limit exceed (TLE) bottlenecks, optimize memory, and write clean
+            production code.
+          </p>
+        </div>
+      </div>
+
+      <!-- Interactive Sorting Visualizer Sandbox -->
+      <div class="visualizer-card">
+        <h3 style="font-size: 1.45rem; margin-bottom: 6px;">Live Algorithmic Sorting Engine</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+          Observe 6 fundamental sorting algorithms in real time with comparison highlighting, pivot partitions, and sorted state animations.
+        </p>
+
+        <div class="visualizer-canvas-container">
+          <canvas id="sorting-canvas"></canvas>
+        </div>
+
+        <div class="visualizer-controls">
+          <select id="algo-select" class="lang-select">
+            <option value="quick">1. QuickSort (O(N log N))</option>
+            <option value="merge">2. MergeSort (O(N log N))</option>
+            <option value="heap">3. HeapSort (O(N log N))</option>
+            <option value="insertion">4. InsertionSort (O(N²))</option>
+            <option value="selection">5. SelectionSort (O(N²))</option>
+            <option value="bubble">6. BubbleSort (O(N²))</option>
+          </select>
+          <button class="btn btn-primary btn-sm" id="btn-start-sort">Start Sorting Visualizer</button>
+          <button class="btn btn-secondary btn-sm" id="btn-reset-sort">Randomize Array</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect Section -->
+  <section id="connect">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="dot"></span>
+          <span>Community</span>
+        </div>
+        <h2 class="section-title">Connect With <span class="gradient-text">Gradient</span></h2>
+        <p class="section-desc">
+          Official social channels and repositories of Gradient Club, IIIT Sri City.
+        </p>
+      </div>
+
+      <div class="social-hub-wrapper">
+        <!-- Direct Social Cards -->
+        <div class="social-cards-grid">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/company/gradient-iiits/posts/?feedView=all" target="_blank"
+            rel="noopener noreferrer" class="social-link-card linkedin">
+            <div class="social-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+              </svg>
+            </div>
+            <div class="social-info">
+              <h4>LinkedIn</h4>
+              <p>@company/gradient-iiits</p>
+            </div>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/gradient_iiits/" target="_blank" rel="noopener noreferrer"
+            class="social-link-card instagram">
+            <div class="social-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <div class="social-info">
+              <h4>Instagram</h4>
+              <p>@gradient_iiits</p>
+            </div>
+          </a>
+
+          <!-- Discord -->
+          <div class="social-link-card discord" style="cursor: pointer;"
+            onclick="showToast('Gradient IIITS Discord invite link will be shared during event onboarding!', 'info')">
+            <div class="social-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+              </svg>
+            </div>
+            <div class="social-info">
+              <h4>Discord Arena</h4>
+              <p>Campus Discussion Channel</p>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <a href="https://github.com/gradientiiits" target="_blank" rel="noopener noreferrer"
+            class="social-link-card github">
+            <div class="social-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+              </svg>
+            </div>
+            <div class="social-info">
+              <h4>GitHub Org</h4>
+              <p>@gradientiiits</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Notify Me Modal -->
+  <div class="modal-backdrop" id="notify-modal-backdrop">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeNotifyModal()">&times;</button>
+      <div
+        style="font-family: var(--font-mono); color: var(--accent-amber); font-size: 0.8rem; margin-bottom: 6px; text-transform: uppercase;">
+        🔔 Early Registration Alert
+      </div>
+      <h3 style="font-size: 1.35rem; margin-bottom: 10px;">Get Notified: <span id="notify-event-name"
+          style="color: var(--accent-cyan);">Event</span></h3>
+      <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 20px;">
+        Registrations for this event are not yet live. Enter your email below to receive the direct Google Form link the
+        second registrations open.
+      </p>
+      <form id="notify-email-form">
+        <div style="margin-bottom: 16px;">
+          <input type="email" id="notify-email-input" required placeholder="Enter student email (e.g. roll_no@iiits.in)"
+            class="join-input" style="width: 100%;">
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 10px;">
+          <button type="button" class="btn btn-secondary btn-sm" onclick="closeNotifyModal()">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-sm">Set Alert</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-wrapper">
+            <img src="assets/logo.png" alt="Gradient Logo" style="width: 36px; height: 36px;">
+            <span class="brand-name">gra<span class="greek-delta">&delta;</span><span
+                style="color: var(--accent-cyan);">i</span>ent</span>
+          </div>
+          <p>
+            The official Competitive Programming &amp; Algorithmic Vanguard of <strong>Indian Institute of Information
+              Technology, Sri City</strong> (Chittoor, Andhra Pradesh).
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#motto-section">Our Motto</a></li>
+            <li><a href="#planned-events">Planned Events</a></li>
+            <li><a href="#code-arena">Code Arena (5 Levels)</a></li>
+            <li><a href="#initiatives">Initiatives</a></li>
+            <li><a href="#connect">Connect</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Connect</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://www.linkedin.com/company/gradient-iiits/posts/?feedView=all" target="_blank"
+                rel="noopener noreferrer">LinkedIn Feed</a></li>
+            <li><a href="https://www.instagram.com/gradient_iiits/" target="_blank" rel="noopener noreferrer">Instagram
+                @gradient_iiits</a></li>
+            <li><a href="https://github.com/gradient-iiits" target="_blank" rel="noopener noreferrer">GitHub
+                Organization</a></li>
+            <li><a href="https://iiits.ac.in" target="_blank" rel="noopener noreferrer">IIIT Sri City Official</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Gradient Club, IIIT Sri City. Built with raw logic &amp; pure CSS.
+        </div>
+        <div style="display: flex; gap: 16px; align-items: center;">
+          <span>Ready for GitHub Pages &bull; Target Domain: <code
+              style="color: var(--accent-cyan);">gradientiiits.in</code></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
